@@ -16333,6 +16333,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\tanne\\OneDrive\\Desktop\\CodingDojoFolder\\BootcampClass\\C#\\LoginAndRegistration\\Views\\Users\\Register.cshtml",
+      "TargetPath": "Views\\Users\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\tanne\\OneDrive\\Desktop\\CodingDojoFolder\\BootcampClass\\C#\\LoginAndRegistration\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
