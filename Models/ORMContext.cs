@@ -1,8 +1,8 @@
 #pragma warning disable CS8618
 using Microsoft.EntityFrameworkCore;
-namespace ORM.Models;
-public class ORMContext : DatabaseContext
+namespace LoginAndRegistration.Models;
+public class ORMContext : DbContext
 {
-    public ORMContext(DatabaseContextOptions options) : base (options) {  }
-    public DbSet<Users> {get; set; }
+    public ORMContext(DbContextOptions options) : base (options) {  }
+    public DbSet<User> Users { get; set; }
 }
