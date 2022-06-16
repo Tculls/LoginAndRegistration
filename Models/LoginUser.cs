@@ -14,3 +14,4 @@ public class LoginUser
     [DataType(DataType.Password)]
     public string Password { get; set; }
 }
+// change the log in vars to LoginEmail and LoginPassword to avoid having error text render on button the wrong button clicks

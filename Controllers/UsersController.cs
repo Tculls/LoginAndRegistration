@@ -10,10 +10,10 @@ public class UsersController : Controller
         _context = context;
     }
 
-    [HttpGet("/register")]
+    [HttpGet("/")]
     public IActionResult LoginAndReg()
     {
-        return View("LoginAndReg");
+        return View("LoginRegistration");
     }
 
     [HttpPost("/register")]
@@ -36,7 +36,8 @@ public class UsersController : Controller
         _context.SaveChanges();
 
         HttpContext.Session.SetInt32("UUID", NewUser.UserId);
-        return RedirectToAction("All", "Success");
+        return RedirectToAction("Success");
+        
 
     }
     [HttpPost("/login")]
@@ -63,12 +64,17 @@ public class UsersController : Controller
             return LoginAndReg();
         }
         HttpContext.Session.SetInt32("UUID", dbUser.UserId);
-        return RedirectToAction("All", "Success");
+        return RedirectToAction("Success");
     }
     [HttpPost("/logout")]
     public IActionResult Logout()
     {
         HttpContext.Session.Clear();
         return RedirectToAction("LoginAndReg");
+    }
+    [HttpGet("/Users/Success")]
+    public IActionResult Success()
+    {
+        return View("Success");
     }
 }
